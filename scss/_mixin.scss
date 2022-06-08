@@ -12,3 +12,16 @@ body{
 
 }
 
+@mixin cajaDeTexto{
+    text-align: justify;
+    padding: 10px;
+}
+
+
+.parrafo1, .parrafo2{
+    @include cajaDeTexto();
+    font-size: $tamanoLetra;
+    font-weight: $estiloLetra;
+    border: 5px solid black;
+
+}
