@@ -1,0 +1,164 @@
+//MAIN SECCION INICIO//
+
+
+
+
+//MAIN SECCION SOBRE MI//
+
+.titulo {
+    color: black;
+    text-align: center;
+    font-size: 80px;
+    padding-top: 10px;
+    margin-right: 40px;
+  }
+  
+.caja {
+    color: black;
+    background-color: #CAB8FF;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid black;
+  }
+  
+.textos {
+    display: flex;
+  }
+
+.parrafo1, .parrafo2 {
+    text-align: justify;
+    padding: 10px;
+  }
+
+/*fotos*/
+
+.cuerpo {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 80%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    img {
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    }
+  
+.agrandarEnMouseOver {
+        transition-duration: 1s;
+      
+        &:hover {
+          transform: scale(1.5);
+        }
+      }
+
+/*PROYECTOS*/
+
+/*PROYECTOS*/
+
+.tituloP {
+    text-align: center;
+    font-size: 80px;
+  }
+  
+  .imag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    gap: 30px;
+  }
+
+
+
+
+  /*CONOCIMIENTOS*/
+
+.tituloC {
+    text-align: center;
+    font-size: 80px;
+  }
+  
+.presentacion {
+    text-align: center;
+    font-size: 30px;
+    margin: 50px;
+  }
+
+.progr {
+    display: grid;
+    grid-template-columns: 150px 150px;
+    grid-template-rows: 150px 200px;
+    row-gap: 70px;
+    column-gap: 50px;
+    margin-bottom: 80px;
+    list-style-type: none;
+    justify-content: center;
+  }
+
+
+
+/*CONTACTO*/
+
+.tituloC {
+    text-align: center;
+    font-size: 80px;
+  }
+
+/*formulario*/
+
+.formulario {
+    width: 400px;
+    padding: 30px;
+    border-radius: 50px;
+    background-image: linear-gradient(to bottom, #bf9fd2, #e5c8f0);
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+.legend {
+    padding: 10px;
+    color: black;
+  }
+
+
+textarea {
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 5px 5px black;
+  }
+  
+input {
+    &[type="text"], &[type="email"] {
+      padding: 5px;
+      border-radius: 10px;
+      box-shadow: 5px 5px black;
+    }
+  }
+
+
+.nombreInput, .apellidoInput {
+    width: 250px;
+  }
+  
+.emailInput {
+    width: 250px;
+    margin-left: 14px;
+  }
+  
+.comentariosInput {
+    width: 327px;
+    height: 100px;
+  }
+  
+.btnFormulario {
+    margin-top: 50px;
+  }
+
+

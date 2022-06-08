@@ -1,0 +1,14 @@
+$colorA: violeta;
+
+body{
+    @if ($colorA ==violeta){
+        background-color: #b983ff;
+
+        }
+    @else{
+        background-color: lightblue;
+
+        }
+
+}
+

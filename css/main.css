@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Courgette&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+main {
+  padding: 150px;
+ }
+
+html {
+  position: relative;
+  min-height: 100%; 
+}
+
+body {
+  font-family: 'Barlow', sans-serif;
+  background-color: #b983ff; 
+}
+
+header {
+  background-color: black;
+  padding: 30px; 
+}
+
+.logo img {
+  width: 250px; 
+}
+
+.bg-dark {
+  background-color: black;
+ }
+
+.mainT {
+  text-align: center;
+  font-size: 75px;
+  margin-bottom: 30px;
+  color: black; 
+}
+
+.mainD {
+  text-align: center;
+  font-size: 65px; 
+}
+
+.secundaryFont {
+  font-family: 'Courgette', cursive;
+ }
+
+header .boton {
+  text-decoration: none;
+  border-radius: 200px;
+  border: 2px solid white;
+  padding: 5px 15px;
+  margin: 5px;
+  box-shadow: 5px 5px lightslategray; 
+}
+
+.boton:hover, .btnActivo {
+  background-color: lightblue;
+  color: black;
+  transition: 0,5s;
+ }
+
+.boton:hover {
+  transform: translate(10px 20px);
+ }
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; 
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  justify-content: center; 
+}
+
+.redes {
+  display: flex;
+  list-style-type: none;
+  margin: 10px;
+  gap: 20px;
+  justify-content: center; 
+}
+
+.btnWhatsapp {
+  position: fixed;
+  list-style: none;
+  bottom: 117px;
+  right: 30px;
+ }
+
+.titulo {
+  color: black;
+  text-align: center;
+  font-size: 80px;
+  padding-top: 10px;
+  margin-right: 40px;
+ }
+
+.caja {
+  color: black;
+  background-color: #CAB8FF;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 2px solid black; 
+}
+
+.textos {
+  display: flex;
+ }
+
+.parrafo1, .parrafo2 {
+  text-align: justify;
+  padding: 10px;
+ }
+
+/*fotos*/
+.cuerpo {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 80%;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+ }
+  .cuerpo img {
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block; 
+  }
+
+.agrandarEnMouseOver {
+  transition-duration: 1s; 
+}
+  .agrandarEnMouseOver:hover {
+    transform: scale(1.5); 
+  }
+
+
+/*PROYECTOS*/
+.tituloP {
+  text-align: center;
+  font-size: 80px;
+ }
+
+.imag {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  gap: 30px; 
+}
+
+/*CONOCIMIENTOS*/
+.tituloC {
+  text-align: center;
+  font-size: 80px;
+ }
+
+.presentacion {
+  text-align: center;
+  font-size: 30px;
+  margin: 50px; 
+}
+
+.progr {
+  display: grid;
+  grid-template-columns: 150px 150px;
+  grid-template-rows: 150px 200px;
+  row-gap: 70px;
+  column-gap: 50px;
+  margin-bottom: 80px;
+  list-style-type: none;
+  justify-content: center; 
+}
+
+/*CONTACTO*/
+.tituloC {
+  text-align: center;
+  font-size: 80px; }
+
+/*formulario*/
+.formulario {
+  width: 400px;
+  padding: 30px;
+  border-radius: 50px;
+  background-image: linear-gradient(to bottom, #bf9fd2, #e5c8f0);
+  margin: auto;
+  margin-top: 50px; 
+}
+
+.legend {
+  padding: 10px;
+  color: black; 
+}
+
+textarea {
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+ }
+
+input[type="text"], input[type="email"] {
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px black; 
+}
+
+.nombreInput, .apellidoInput {
+  width: 250px; 
+}
+
+.emailInput {
+  width: 250px;
+  margin-left: 14px; 
+}
+
+.comentariosInput {
+  width: 327px;
+  height: 100px;
+ }
+
+.btnFormulario {
+  margin-top: 50px;
+ }
+
+.btnActivo{
+  border-radius: 10px;
+  box-shadow: 5px 5px black;
+}
+
+
+/* VERSION MOBILE*/
+/* MEDIA QUERIES*/
+
+@media only screen and (max-width: 600px) {
+  .boton {
+    font-size: 20px;
+    margin: 10px;
+    line-height: 20px;
+}
+  .contenedorBody {
+    padding: 15px; 
+    padding-bottom: 150px;
+  
+  }
+  .contFlex {
+    display: flex;
+   }
+  .contenedor {
+    width: 100%;
+   }
+  .tituloC {
+    font-size: 55px; 
+    text-align: center;
+  }
+  .logo {
+    width: 250px;
+   }
+  .menu ul {
+    flex-direction: column;
+    font-size: 50%;
+    text-align: center;
+   }
+
+
+  /*SECCION INICIO*/
+  main {
+    padding-top: 50px;
+    padding-bottom: 2.5rem;
+    }
+  .mainT {
+    text-align: center;
+    font-size: 50px; 
+  }
+  .mainD {
+    text-align: center;
+    font-size: 45px;
+   }
+  footer {
+    text-align: center; 
+  }
+  .btnWhatsapp {
+    width: 45px;
+    height: 45px;
+    bottom: 127px;
+    right: 15px; 
+  }
+
+
+  /* SECCION SOBRE MI */
+
+  .titulo{
+    font-size: 70px;
+  }
+
+  .cuerpo {
+    flex-wrap: wrap;
+  }
+
+
+  /*CONOCIMIENTOS*/
+
+
+  .tecnologias {
+    width: 100%;
+   }
+  .progr {
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 300px 300px 300px;
+    row-gap: 10px;
+    column-gap: 10px; } 
+  
+}
+
+.tituloC{
+  font-size: 50px;
+}
+
+.presentacion{
+  text-align: justify;
+}
+
+
+  /*PROYECTOS*/
+
+  .tituloP {
+    font-size: 70px;
+}
+
+
+/*CONTACTO*/
+
+
+.formulario {
+  width: 300px;
+  padding: 30px;
+  border-radius: 50px;
+  background-image: linear-gradient(to bottom, #bf9fd2, #e5c8f0);
+  
+  margin-top: 50px; 
+  margin-right: 90px;
+}
+
+.comentariosInput {
+  width: 250px;
+ }
+
+.emailInput {
+  width: 245px;
+  margin-left: 4px; 
+}

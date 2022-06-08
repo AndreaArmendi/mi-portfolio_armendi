@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    padding: 150px;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    font-family: 'Barlow', sans-serif;
+    background-color: $backColorBody;
+}
+
+header{
+    background-color: $fondoColor;
+    padding: 30px;
+}
+
+.logo img{
+    width: 250px;
+}
+
+.bg-dark{
+    background-color: black;
+}
+
+.mainT {
+    text-align: center;
+    font-size: 75px;
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+.mainD {
+    text-align: center;
+    font-size: 65px;
+  }
+  
+.secundaryFont {
+    font-family: 'Courgette', cursive;
+  }
+
+    header{
+        .boton{
+                    text-decoration: none;
+                    border-radius: 200px;
+                    border: 2px solid white;
+                    padding: 5px 15px;
+                    margin: 5px;
+                    box-shadow: 5px 5px lightslategray;
+            }
+        
+    }
+
+.boton:hover, .btnActivo{
+        background-color: lightblue;
+        color: black;
+        transition: 0,5s;
+      }
+      
+.boton:hover{
+        transform: translate(10px 20px);
+      }
+      
+header nav ul{
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+      }
+
+
+footer{
+    display: flex;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  background: black;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px; left: 0;  
+  justify-content:center;
+
+}
+ 
+.redes{
+    display: flex;
+    list-style-type: none;
+    margin: 10px;
+    gap: 20px;
+    justify-content: center;
+  }
+
+
+.btnWhatsapp{
+    position: fixed;
+    list-style: none;
+    bottom: 117px;
+    right: 30px;
+  }
