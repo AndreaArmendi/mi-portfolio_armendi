@@ -8,6 +8,17 @@ main{
     padding: 150px;
 }
 
+.contMain{
+  padding: 70px;
+  h1{
+    margin-bottom: 20px;
+  }
+}
+
+.caja{
+  display: flex;
+}
+
 html {
     position: relative;
     min-height: 100%;
@@ -23,85 +34,81 @@ header{
     padding: 30px;
 }
 
-.logo img{
-    width: 250px;
+#navbarNav {
+  .navbar-nav{
+    li{
+      border-bottom: 2px solid transparent;
+      a{
+        font-size: 22px;
+        padding:25px;
+      }
+    }
+    li:hover{
+      border-bottom: 2px solid white;
+      a{
+        font-weight: 800;
+      }
+    }
+  }
+}
+
+.logo{
+    height: 100px;
 }
 
 .bg-dark{
     background-color: black;
 }
 
-.mainT {
-    text-align: center;
-    font-size: 75px;
-    margin-bottom: 30px;
-    color: black;
-  }
-  
-.mainD {
-    text-align: center;
-    font-size: 65px;
-  }
-  
-.secundaryFont {
-    font-family: 'Courgette', cursive;
-  }
 
-    header{
-        .boton{
-                    text-decoration: none;
-                    border-radius: 200px;
-                    border: 2px solid white;
-                    padding: 5px 15px;
-                    margin: 5px;
-                    box-shadow: 5px 5px lightslategray;
-            }
-        
-    }
-
-.boton:hover, .btnActivo{
+.boton{
         background-color: lightblue;
         color: black;
-        transition: 0,5s;
+        
+        border-radius: 10px black;
       }
-      
-.boton:hover{
-        transform: translate(10px 20px);
-      }
-      
+
 header nav ul{
         list-style: none;
         display: flex;
         justify-content: flex-end;
       }
 
+.bg-dark{
+  background-color: black !important;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+}
 
 footer{
-    display: flex;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 150px;
   background: black;
   color: white;
   font-size: 20px;
-  position: absolute;
-  bottom: 0px; left: 0;  
   justify-content:center;
-
+  padding: 60px 20px;
+  p{
+    margin-top:20px;
+  }
 }
- 
+
 .redes{
     display: flex;
     list-style-type: none;
     margin: 10px;
     gap: 20px;
     justify-content: center;
+    padding: 0;
   }
 
 
 .btnWhatsapp{
     position: fixed;
-    list-style: none;
     bottom: 117px;
     right: 30px;
   }

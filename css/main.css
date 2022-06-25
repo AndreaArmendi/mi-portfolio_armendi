@@ -7,23 +7,84 @@
 main {
   padding: 150px; }
 
+.contMain {
+  padding: 70px; }
+  .contMain h1 {
+    margin-bottom: 20px; }
+
+.caja {
+  display: flex; }
+
 html {
   position: relative;
   min-height: 100%; }
 
 body {
   font-family: 'Barlow', sans-serif;
-  background-color: #b983ff; }
+  background-color: #caa1ff; }
 
 header {
   background-color: black;
   padding: 30px; }
 
-.logo img {
-  width: 250px; }
+#navbarNav .navbar-nav li {
+  border-bottom: 2px solid transparent; }
+  #navbarNav .navbar-nav li a {
+    font-size: 22px;
+    padding: 25px; }
+
+#navbarNav .navbar-nav li:hover {
+  border-bottom: 2px solid white; }
+  #navbarNav .navbar-nav li:hover a {
+    font-weight: 800; }
+
+.logo {
+  height: 100px; }
 
 .bg-dark {
   background-color: black; }
+
+.boton {
+  background-color: lightblue;
+  color: black;
+  border-radius: 10px black; }
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end; }
+
+.bg-dark {
+  background-color: black !important; }
+
+.navbar-collapse {
+  justify-content: flex-end; }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  padding: 60px 20px; }
+  footer p {
+    margin-top: 20px; }
+
+.redes {
+  display: flex;
+  list-style-type: none;
+  margin: 10px;
+  gap: 20px;
+  justify-content: center;
+  padding: 0; }
+
+.btnWhatsapp {
+  position: fixed;
+  bottom: 117px;
+  right: 30px; }
 
 .mainT {
   text-align: center;
@@ -38,100 +99,48 @@ header {
 .secundaryFont {
   font-family: 'Courgette', cursive; }
 
-header .boton {
-  text-decoration: none;
-  border-radius: 200px;
-  border: 2px solid white;
-  padding: 5px 15px;
-  margin: 5px;
-  box-shadow: 5px 5px lightslategray; }
-
-.boton:hover, .btnActivo {
-  background-color: lightblue;
-  color: black;
-  transition: 0,5s; }
-
-.boton:hover {
-  transform: translate(10px 20px); }
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: flex-end; }
-
-footer {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 150px;
-  background: black;
-  color: white;
-  font-size: 20px;
-  position: absolute;
-  bottom: 0px;
-  left: 0;
-  justify-content: center; }
-
-.redes {
-  display: flex;
-  list-style-type: none;
-  margin: 10px;
-  gap: 20px;
-  justify-content: center; }
-
-.btnWhatsapp {
-  position: fixed;
-  list-style: none;
-  bottom: 117px;
-  right: 30px; }
-
-.titulo {
+.contMain .titulo {
   color: black;
   text-align: center;
   font-size: 80px;
   padding-top: 10px;
-  margin-right: 40px; }
+  margin-right: 40px;
+  margin-bottom: 60px; }
+
+.textos {
+  display: flex;
+  font-weight: 500; }
+
+.parrafo {
+  text-align: justify;
+  padding: 10px;
+  width: 50%; }
 
 .caja {
   color: black;
-  background-color: #CAB8FF;
   margin-top: 50px;
   margin-bottom: 50px;
-  border: 2px solid black; }
+  width: 50%;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px; }
 
-.textos {
-  display: flex; }
-
-.parrafo1, .parrafo2 {
-  text-align: justify;
-  padding: 10px;
-  font-size: 25px; 
-}
-
-/*fotos*/
 .cuerpo {
   display: flex;
   justify-content: center;
-  gap: 10%;
+  flex-wrap: wrap;
   margin-top: 25px;
   margin-bottom: 25px;
-  width: 80%;
-  max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
   .cuerpo img {
-    border-radius: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block; }
+    width: 200px; }
+  .cuerpo.proyecto {
+    width: 80%;
+    max-width: 900px;
+    padding: 50px;
+    gap: 30px; }
 
-.agrandarEnMouseOver {
-  transition-duration: 1s; }
-  .agrandarEnMouseOver:hover {
-    transform: scale(1.2); }
-
-/*PROYECTOS*/
-/*PROYECTOS*/
 .tituloP {
   text-align: center;
   font-size: 80px; }
@@ -143,7 +152,6 @@ footer {
   list-style-type: none;
   gap: 30px; }
 
-/*CONOCIMIENTOS*/
 .tituloC {
   text-align: center;
   font-size: 80px; }
@@ -151,9 +159,7 @@ footer {
 .presentacion {
   text-align: center;
   font-size: 30px;
-  margin: 50px;
-  font-weight: bold;
- }
+  margin: 50px; }
 
 .progr {
   display: grid;
@@ -165,110 +171,65 @@ footer {
   list-style-type: none;
   justify-content: center; }
 
-/*CONTACTO*/
-
-
 .tituloC {
   text-align: center;
-  font-size: 80px;
-  
- }
+  font-size: 80px; }
 
-/*formulario*/
 .formulario {
   width: 400px;
   padding: 30px;
-  border-radius: 50px;
-  background-image: linear-gradient(to bottom, #bf9fd2, #e5c8f0);
   margin: auto;
   margin-top: 50px; }
 
-.legend {
-  padding: 10px;
-  color: black; }
-
 textarea {
   padding: 5px;
-  border-radius: 10px;
-  box-shadow: 5px 5px black; }
+  border-radius: 10px; }
 
 input[type="text"], input[type="email"] {
   padding: 5px;
-  border-radius: 10px;
-  box-shadow: 5px 5px black; }
+  border-radius: 10px; }
 
 .nombreInput, .apellidoInput {
   width: 250px;
- }
+  font-weight: 800;
+  margin-bottom: 10px; }
 
 .emailInput {
   width: 250px;
-  margin-left: 14px; }
+  margin-left: 14px;
+  font-weight: 800;
+  margin-bottom: 10px; }
 
 .comentariosInput {
   width: 327px;
   height: 100px;
-margin-top: 20px; }
+  margin-bottom: 10px; }
 
 .btnFormulario {
-  margin-top: 50px; 
-}
+  margin-top: 50px; }
 
-.btnActivo{
-  border-radius: 10px;
-  box-shadow: 5px 5px black;
-}
+.nomb, .mail, .ape, .mensaje, .cont {
+  font-weight: bold; }
 
-.cont{
-  font-weight: bold;
-}
-
-.nomb{
-  font-weight: bold;
-}
-
-.nomb, .ape, .mail, .mensaje{
-    font-weight: bold;
-}
-
-.mensaje{
-  margin-top: 15px;
-}
-
-
-/* VERSION MOBILE*/
+/* VERSION TABLET*/
 /* MEDIA QUERIES*/
-@media only screen and (max-width: 600px) {
-  .boton {
-    font-size: 20px;
-    margin: 10px;
-    line-height: 20px; }
-  .contenedorBody {
-    padding: 15px; }
-  .contFlex {
-    display: flex; }
-  .contenedor {
-    width: 100%; }
-  .tituloC {
-    font-size: 55px; }
-  .logo {
-    width: 250px; }
-  .menu ul {
-    flex-direction: column;
-    font-size: 50%;
-    text-align: center; }
+@media only screen and (max-width: 768px) {
   /*SECCION INICIO*/
   main {
     padding-top: 50px;
-    /* padding-bottom:70px; */
-    padding-bottom: 2.5rem;
-    /* Footer height */ }
+    padding-bottom: 2.5rem; }
   .mainT {
     text-align: center;
     font-size: 55px; }
   .mainD {
     text-align: center;
     font-size: 45px; }
+  .cuerpo {
+    flex-direction: column;
+    width: 100%; }
+    .cuerpo .caja {
+      width: 100%;
+      margin: 0; }
   footer {
     text-align: center; }
   .btnWhatsapp {
@@ -279,6 +240,8 @@ margin-top: 20px; }
   /* SECCION SOBRE MI */
   .cuerpo {
     flex-wrap: wrap; }
+    .cuerpo.proyecto {
+      flex-direction: row; }
   /*CONOCIMIENTOS*/
   .tecnologias {
     width: 100%; }
@@ -287,3 +250,49 @@ margin-top: 20px; }
     grid-template-rows: 300px 300px 300px 300px;
     row-gap: 10px;
     column-gap: 10px; } }
+
+/* VERSION MOBILE*/
+@media only screen and (max-width: 420px) {
+  .boton {
+    font-size: 20px;
+    margin: 10px;
+    line-height: 20px; }
+  .progr {
+    justify-content: flex-start;
+    gap: 30px; }
+  .contenedorBody {
+    padding: 15px; }
+  .contFlex {
+    display: flex; }
+  .contenedor {
+    width: 100%; }
+  .tituloC {
+    font-size: 55px; }
+  .logo {
+    width: 200px; }
+  .menu ul {
+    flex-direction: column;
+    font-size: 50%;
+    text-align: center; }
+  main {
+    padding: 40px 20px; }
+  .contMain {
+    padding: 33px; }
+  .cuerpo {
+    flex-direction: column; }
+    .cuerpo .caja {
+      flex-direction: column;
+      align-items: center; }
+      .cuerpo .caja p {
+        width: 100%; }
+  .redes {
+    padding: 20px; }
+  footer {
+    padding: 40px; }
+    footer p {
+      margin-top: 0;
+      line-height: 2; }
+  .btnWhatsapp {
+    position: fixed;
+    bottom: 202px;
+    right: 46px; } }

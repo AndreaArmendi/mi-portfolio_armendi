@@ -18,7 +18,7 @@ body{
 }
 
 
-.parrafo1, .parrafo2{
+.parrafo {
     @include cajaDeTexto();
     font-size: $tamanoLetra;
     font-weight: $estiloLetra;
